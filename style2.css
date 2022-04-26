@@ -1,0 +1,33 @@
+nav {
+    height: 100%;
+    width: 5vw;
+    background-color: gray;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 0;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    width: 100%;
+}
+
+.basnav {
+    margin-bottom: 3vh;
+}
+
+#rouge {}

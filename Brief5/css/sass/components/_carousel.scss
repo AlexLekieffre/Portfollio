@@ -1,0 +1,115 @@
+.tout {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 95vh;
+
+
+  .titre_carousel {
+    position: absolute;
+    z-index: 2;
+    bottom: 5%;
+    text-align: center;
+    min-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    // text-transform: uppercase;
+    // letter-spacing: .6rem;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    // text-shadow: 2px 2px 2px #333;
+    // line-height: 6rem;
+    user-select: none;
+    // background-color: rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.3);
+    width: 100%;
+
+  }
+
+  .t {
+    margin: 0%;
+  }
+
+  .p {
+    margin: 0 0 50px 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 100px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 100%;
+    max-height: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 5px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    opacity: 0, 5;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #5a6bff;
+  }
+
+}
+
+.swiper-wrapper {
+  height: 100%;
+  width: 100%;
+  margin-top: 80px;
+}
+
+div.vente_background {
+  background-image: url(/terril.jpg);
+  background-size: cover;
+
+  p.vente_titre {
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0 20%;
+  }
+
+  p.vente_desc {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0 20%;
+  }
+}

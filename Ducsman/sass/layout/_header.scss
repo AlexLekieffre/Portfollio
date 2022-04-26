@@ -1,0 +1,60 @@
+.banniere {
+    width:100%;
+    display:flex;
+    background-color: #414246;
+
+    .fond {
+        //max-width:1200px;
+        width:100%;
+        margin:0 auto;
+        height:15vw;
+        object-fit: cover;
+        object-position: 0 30%;
+    }
+
+    .fa-briefcase, .fa-bars {
+        position:absolute;
+        top: 0; 
+        cursor: pointer;  
+        color:$color-fond-fonce;   
+        font-size:2vw;
+        height:2vw;   
+        width:2vw;          
+    }    
+
+    .fa-briefcase {
+        right: 0;
+        transform: translate(-2vw, 2vw);  
+    }
+
+    .fa-bars { 
+        left: 0;
+        transform: translate(27vw, 12vw);  
+    }
+
+    @media screen and (max-width: 800px) {
+        .banniere {
+            object-position: 0;
+            margin:0;
+        }
+
+        .fond {
+            visibility:hidden;
+        }
+
+        .fa-bars { 
+            visibility:visible;
+            transform: translate(2vw, 12vw); 
+        }
+
+        .fa-briefcase {
+            transform: translate(-2vw, 12vw); 
+        }
+    }
+
+    // @media screen and (min-width: 800px) {
+    //     .fa-bars { 
+    //         visibility:hidden;
+    //     }
+    // }
+}

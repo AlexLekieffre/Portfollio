@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roger, maitre du html et dresseur pokemon</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <div class="hautnav">
+                    <a href="">
+                        <li>accueil</li>
+                    </a>
+                    <a href="">
+                        <li>Dl</li>
+                    </a>
+                    <a href="">
+                        <li>Sommaire</li>
+                    </a>
+                    <a href="">
+                        <li>Agenda</li>
+                    </a>
+                    <a href="">
+                        <li>Portfollio</li>
+                    </a>
+                    <a href="">
+                        <li>Ajouter</li>
+                    </a>
+                </div>
+                <div class="basnav">
+                    <a href="">
+                        <li>Setting</li>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1>Dresseur Pokemon</h1>
+        <p>Les champs marqués d'une * sont obligatoires.</p>
+        <fieldset>
+            <legend>Nouveau dresseur</legend>
+            <form action="post">
+
+                <p>Nom*</p>
+                <input type="text">
+
+
+                <p>Description</p>
+                <textarea name="description" id="" cols="30" rows="10"></textarea>
+
+                <p>Equipe</p>
+                <input type="radio" id="rouge" name="team" value="rouge" checked>
+                <label for="rouge">Rouge</label><br>
+
+                <input type="radio" id="jaune" name="team" value="jaune">
+                <label for="jaune">jaune</label><br>
+
+
+
+                <input type="radio" id="bleu" name="team" value="bleu">
+                <label for="bleu">Bleu</label><br>
+
+                <p>Anniversaire*</p>
+                <input type="date" name="anniv" id="Anniversaire"><br><br>
+
+                <button>Envoyer</button>
+
+
+
+            </form>
+        </fieldset>
+
+    </main>
+</body>
+
+</html>

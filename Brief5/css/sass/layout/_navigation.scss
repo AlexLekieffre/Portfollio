@@ -1,0 +1,187 @@
+.active {
+    position: fixed;
+    height: 9vh;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px;
+    z-index: 1101;
+
+    .lien {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 10mm;
+    }
+
+    .logo2 {
+        margin: 10%;
+        height: 10mm;
+        background: linear-gradient(45deg, #00246b, #003399c2);
+    }
+
+    .les_logo {
+        display: flex;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        z-index: 1100;
+    }
+
+    li {
+        padding-left: 50px;
+    }
+
+    a {
+
+        text-decoration: none;
+        color: inherit;
+        font-family: 'arial';
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #00B9CA;
+    }
+
+
+    .burger {
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width:800px) {
+    .active {
+        display: flex;
+        width: 100%;
+    }
+
+    .lien {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+    }
+
+    .les_logo {
+        margin-left: 50px;
+    }
+
+    .liste {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+        height: calc(100vh - 65px);
+        position: absolute;
+        top: 67px;
+        left: 0;
+        background: black;
+        gap: 20px;
+        opacity: 80%;
+        transform: translateX(110%);
+
+    }
+
+    .show-nav .liste {
+        width: 100vw;
+        transform: translateX(0%);
+    }
+
+    .liste {
+        transform: translateX(0%);
+        transition: all .4s ease-in-out;
+    }
+
+    .active ul {
+        color: white;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .active li {
+        padding: 0;
+    }
+
+    .liste>a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .active .burger {
+        display: block;
+        padding: 0;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: transparent;
+        transform: translateX(0%);
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 45px;
+        height: 4px;
+        border-radius: 3px;
+        background: black;
+    }
+
+    .bar::before,
+    .bar::after {
+        content: "";
+        width: 45px;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        background: black;
+        border-radius: 3px;
+    }
+
+    .bar::before {
+        transform: translateY(-12px)
+    }
+
+    .bar::after {
+        transform: translateY(12px)
+    }
+
+    .show-nav .bar {
+        width: 0;
+        background: transparent;
+    }
+
+    .show-nav .bar::before {
+        transform: rotate(45deg);
+    }
+
+    .show-nav .bar::after {
+        transform: rotate(-45deg);
+    }
+
+    .recherche {
+        margin-right: 30px;
+
+    }
+
+}
